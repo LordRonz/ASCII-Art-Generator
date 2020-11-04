@@ -1,5 +1,5 @@
 from PIL import Image
-import numpy
+import numpy as np
 
 
 def main():
@@ -10,14 +10,11 @@ def main():
         return
     asc = '`^",:;Il!i~+_-?][}{1)(|\\/tfjrxnuvczXYUJCLQ0OZmwqpdbkhao*#MW&8%B@$'
     im.thumbnail((300, 300))
-    img_arr = numpy.array(im)
+    img_arr = np.array(im)
     # print(img_arr)
-    avg_arr = [[numpy.average(y) for y in x] for x in img_arr]
+    avg_arr = [[np.average(y) for y in x] for x in img_arr]
     art = [[asc[int(y / 255 * 64)] * 3 for y in x] for x in avg_arr]
-    for x in art:
-        print("".join(x))
-    #print(im.size)
-    # print(avg_arr)
+    print("\n".join(["".join(x) for x in art]))
 
 
 if __name__ == "__main__":
