@@ -12,7 +12,8 @@ def main():
     im.thumbnail((300, 300))
     img_arr = np.array(im)
     # print(img_arr)
-    avg_arr = [[np.average(y) for y in x] for x in img_arr]
+    npav = np.average
+    avg_arr = [[npav(y) for y in x] for x in img_arr]
     art = [[asc[int(y / 255 * 64)] * 3 for y in x] for x in avg_arr]
     print("\n".join(["".join(x) for x in art]))
 
