@@ -114,18 +114,32 @@ pip install -r requirements.txt
 ## Usage
 
 Do this to show the help message
+
 ```sh
 python main.py -h
 ```
 
 Actual usage
+
 ```sh
 python main.py shrek.png
 ```
+
 You can name the output file too
+
 ```sh
 python main.py shrek.png -o shrex.png
 ```
+
+### Example
+
+> Input Image
+
+<img src="CS50_cat.jpg" alt="CS50 cat" width="300" title="CS50 cat"/>
+
+> Output Image
+
+<img src="CS50_cat_out.png" alt="CS50 cat ascii" width="300" title="CS50 cat but an ascii art"/>
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
