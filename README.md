@@ -131,6 +131,11 @@ You can name the output file too
 python main.py shrek.png -o shrex.png
 ```
 
+Enable color
+```sh
+python main.py shrek.png -c
+```
+
 ### Example
 
 > Input Image
@@ -141,6 +146,12 @@ python main.py shrek.png -o shrex.png
 
 <img src="CS50_cat_out.png" alt="CS50 cat ascii" width="300" title="CS50 cat but an ascii art"/>
 
+> Colored Output
+
+<img src="CS50_cat_out_color.jpg" alt="CS50 cat ascii colored" width="300" title="CS50 cat but an ascii art and colored"/>
+
+<img src="mage.jpg" alt="MAGE ascii colored" width="300" title="MAGE Logo but an ascii art and colored"/>
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
@@ -149,7 +160,7 @@ python main.py shrek.png -o shrex.png
 - [x] Printing the ASCII into the stdout
 - [x] Outputing an actual Image
 - [x] Add support for arguments
-- [] Add some coloring options
+- [ ] Add some coloring options
 
 See the [open issues](https://github.com/LordRonz/ASCII-Art-Generator/issues) for a full list of proposed features (and known issues).
 

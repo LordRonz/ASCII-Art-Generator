@@ -140,4 +140,5 @@ cython_debug/
 *.png
 *.jpg
 !CS50_cat.jpg
-!CS50_cat_out.png
+!CS50_cat*
+!mage.jpg
