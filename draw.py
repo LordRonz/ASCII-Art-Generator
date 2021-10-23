@@ -1,4 +1,3 @@
-from io import BytesIO
 from PIL import Image, ImageDraw
 
 def draw(strings, out):
@@ -12,9 +11,4 @@ def draw(strings, out):
     for i, string in enumerate(strings):
         d.text((0, i * char_height), string, fill=(255, 255, 255))
 
-    s = BytesIO()
-    img.save(s, 'png')
-    in_memory_file = s.getvalue()
-    image = Image.open(BytesIO(in_memory_file))
-
-    image.save(out)
+    img.save(out)

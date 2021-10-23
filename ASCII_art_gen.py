@@ -13,7 +13,7 @@ def generate_art(filename, out):
     im.thumbnail((300, 300))
     img_arr = np.array(im)
 
-    avg_arr = [[0.2126*y[0] + 0.7152*y[1] + 0.0722*y[2] for y in x] for x in img_arr]
+    avg_arr = [[y if np.isscalar(y) else 0.2126*y[0] + 0.7152*y[1] + 0.0722*y[2] for y in x] for x in img_arr]
 
     art = [[asc[int(y / 255 * 64)] * 2 for y in x] for x in avg_arr]
 
