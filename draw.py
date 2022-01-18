@@ -22,3 +22,4 @@ def draw(art, im, out, color):
             d.text((j * char_width * 2, i * char_height), string, fill=(r, g, b))
 
     img.save(out)
+    print("Image generated...")
